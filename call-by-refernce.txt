@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+void myfunction(int *y){
+    (*y)+=20;
+    printf("%d\n",*y);
+}
+int main()
+{
+   int x= 20;
+   printf("%d\n",x);
+   myfunction(&x);
+   printf("%d\n",x);
+}
